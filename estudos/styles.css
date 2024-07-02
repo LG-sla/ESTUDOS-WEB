@@ -1,0 +1,55 @@
+  
+   @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Playwrite+MX:wght@100..400&display=swap');
+  @font-face {
+            font-family: pumpkins; /* fonte não baixada */
+            src: url(Fontes/pumpkinsland/pumpkinsland-DEMO.ttf); 
+            
+            font-family: retroma;
+            src: url(Fontes/retroma_vibes/Retroma\ Vibes.ttf);    
+          
+        }
+        body{
+            color:rgb(0, 0, 0);
+            background-color:rgb(255, 255, 255); /*cor do fundo */
+            font-family:'pumpkins';
+            font-size: 12px;
+           background-image:url(https://www.bhmpics.com/downloads/cute-gif-wallpaper/4.3205cfff3fdc0c48257d830a6499429f.gif);  
+           background-size:contain;
+
+
+
+           
+        }
+        h1{
+            font-family:'Metal Mania', arial;
+            font-size: 3em; /* tamanho da fonte */
+            font-style: italic;
+            
+            text-align: center;
+        }
+        
+        p{
+            font-family :KoHo;    /* fonte */
+            text-align: justify; /* alinamento */
+            line-height: 1.2em; /* entrelinha */
+            
+
+            color:rgb(0, 0, 0);
+            
+        }
+        h2{
+            font-family:'Metal Mania', arial;
+      
+        color:rgb(0, 0, 0);background-repeat: no-repeat;
+        
+    }
+
+
+h3,h4,h5
+{
+  color:rgb(0, 0, 0);
+  text-align: center;
+  font-family:'Metal Mania', arial;
+}
+
+

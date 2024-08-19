@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body id="corpo">
+    <h1>Variáveis e Operadores</h1>
+
+    <script>
+        let variavel; //declaração de variavel
+        variavel=3; //atribuição de valor
+        console.log(variavel); //mostra valor no console
+        console.log(typeof variavel); //mostra o tipo de variavel
+
+        variavel = "Luis";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = "2";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = true;
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 2 + "3";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 5 - 3;
+        console.log(variavel);
+        console.log(typeof variavel);
+        
+        variavel = 5 - "Luis";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        
+        
+    </script>
+
+<button onclick="fonte(2)">aumenta</button>
+<button onclick="fonte(-2)">diminui</button>
+<button onclick="fonte(16-tamanho)">original</button>
+
+<p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae libero velit aut consequatur officia assumenda at est nihil sunt doloribus quam, illo ullam delectus nobis dolorem neque perspiciatis vero alias ut non. Tempora officia laboriosam ut repudiandae maxime nostrum delectus expedita similique unde suscipit minima voluptatem quidem nesciunt quas assumenda, consequatur iure. Id debitis fugit repudiandae beatae provident eligendi perferendis, tempora at. Eligendi ab amet, impedit non tenetur voluptatibus corrupti libero eos consequuntur enim exercitationem debitis corporis officiis dolorum ea nesciunt, odit nihil et veritatis quo nulla soluta! Molestiae, ipsa! Itaque dolor dolores sint excepturi omnis, dolore architecto qui.</p>
+
+    <script>
+    let tamanho = 16;
+        function fonte(operador){
+            tamanho = tamanho += operador;
+            document.getElementById("texto").style.fontSize = tamanho + "px"
+        }
+
+    </script>
+
+    <script>
+
+        variavel = 3 > 2;
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 3 < 2;
+        console.log(variavel);
+
+        variavel = 3 < 3;
+        console.log(variavel);
+
+        variavel = 3 == 2;
+        console.log(variavel);
+
+        variavel = 3 >= 2;
+        console.log(variavel);
+
+        variavel = 3 != 2;
+        console.log(variavel);
+
+        variavel = 3 === 3;
+        console.log(variavel);
+        
+
+    </script>
+
+    
+</body>
+</html>

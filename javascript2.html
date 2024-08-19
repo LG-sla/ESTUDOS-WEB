@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Onde coloca o JavaScript</h1>
+    <p id="teste1">Olá Mundo!</p>
+    <button onclick="document.getElementById('teste1').innerHTML = 'Olá JavaScript via atributo';">Clique aqui</button>
+    <button onclick="mensagem()">Clique aqui</button>
+
+    <script>
+        
+        document.getElementById('teste1').innerHTML = 'Olá Javascript'
+    </script>
+    <button onclick="mensagemExterna()">Botão 3</button>
+    <script src="scripts.js"></script>
+<h1>Mensagem via elemento HTML</h1>
+
+<p id="msg"></p>
+
+<button onclick="document.getElementById('msg').innerHTML = 'Olá mundo!' ">Botão 1</button>
+
+<h2>via alert</h2>
+
+<button onclick="alert('Olá Mundo');">Botão 2</button>
+
+<h2>via console</h2>
+
+<button onclick="console.log('Olá Mundo!');">Botão 3</button>
+
+<h2>via escrita direta</h2>
+
+<button onclick="document.write('Olá Mundo!');">Botão 4</button>
+
+<h1>Entrada de inforação</h1>
+
+<input type="text" id="texto">
+
+<Button onclick="alert('Bom dia ' + document.getElementById('texto').value)">clique</Button>
+
+<h2>Exemplo 2</h2>
+
+<input type="text" id="valor1">
+<input type="text" id="valor2">
+<button onclick="calcular('+')">+</button>
+<button onclick="calcular('-')">-</button>
+<button onclick="calcular('*')">*</button>
+<button onclick="calcular('/')">/</button>
+<input type="text" id="resultado">
+
+<script>
+    function calcular(operador){ 
+       let num1 = Number(document.getElementById('valor1').value);
+       let num2 = Number(document.getElementById('valor2').value);
+       let resultado = eval(num1 + operador + num2);
+       document.getElementById("resultado").value = resultado;
+    }    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+
+            <legend>Dados de Acesso</legend>
+            <label for="nome"><span class="destaque">*</span>Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="Nome" required title="Digite seu nome completo">
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Cadastro</legend>
+            <input type="radio" id="pf" name="tipo" value="pf" required><label for="pf">Pessoa Física</label>
+            <input type="radio" id="pj" name="tipo" value="pj" required><label for="pj">Pessoa Jurídica</label>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="date" id="nasc" name="nasc">
+            <br>
+            <input type="checkbox" name="termos" id="termos" value="sim">
+            <label for="termos"> Li e aceito os termos da página.</label>
+            <br>
+            <input type="checkbox" name="info" id="info" value="sim">
+            <label for="info">Desejo receber o informativo.</label>
+            <br>
+            <label for="curso">Curso:</label>
+            <select name="curso" id="curso">
+                <option value="">Escolha</option>
+                <option value="ex">Excel</option>
+                <option value="ht">HTML</option>
+                <option value="cs">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+            <br>
+            <label for="msg">Mensagem:</label>
+            <br>
+            <textarea name="msg" id="msg"></textarea>
+        </fieldset>
+
+        
+        
+        <br>
+        <input type="submit">
+        
+    </form>
+    
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">CPF</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (99999999999 - min)) + min;
+}
+</script>
+    
+</body>
+</html>

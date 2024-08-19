@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout básico</title>
+    <style>
+        *{
+           box-sizing: border-box;
+        }
+
+        header{
+           background-color: #444444;
+           display: flex;
+           justify-content: ;
+           align-items: center;
+           height: 100px;
+          
+        }
+        nav{
+           background-color:antiquewhite;
+           
+
+        }
+        main{
+            background-color: #aaaaaa;
+            height: 400px;
+            width: 100%;
+            border: solid 5px;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+        aside{
+            background-color: #444444;
+            height: 400px;
+            width: 100%;
+            border: solid 5px;
+            box-sizing: border-box;
+            padding: 20px;
+
+
+        }
+        footer{
+            background-color: black;
+            height: 150px;
+            
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header img{
+            height: 100px;
+        }
+        header h1 {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav ul{
+            display: flex;
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+                }
+        nav li{
+            text-align: center;
+            flex-grow: 1;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 5px;
+        }
+        nav a:hover{
+            background-color: black;
+            color: white;
+        }
+        @media(min-width:576px){
+            main{
+                width: 70%;
+            }
+            aside{
+                width: 30%;
+            }
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="" alt="Logo">
+        <h1>Layout</h1>
+    </header>
+    <nav>
+        <ul>.
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+<div class="row">
+    
+    <main>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, facere consequuntur nesciunt earum voluptatum vel consectetur quidem explicabo quos magni officia incidunt error et, ut adipisci. Placeat, quod rerum voluptas hic deleniti eveniet dolores assumenda necessitatibus error repudiandae facere molestiae harum, ipsa enim saepe! Laudantium iste architecto, eius et amet reprehenderit atque illum quas animi quod dicta ab, ratione quisquam dolor laborum. Unde quos ea voluptatum sunt ratione natus dolorum incidunt at minima vel. A nemo iste minus cum recusandae, odit saepe, tenetur error incidunt quas amet aliquam sapiente voluptas deleniti modi voluptate iure praesentium facilis quam dicta? Laudantium, eius.
+         </p>
+        </main>
+    
+    <aside>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus cum, hic doloremque necessitatibus a animi cumque id sint obcaecati dignissimos quasi praesentium consectetur laborum quisquam fuga? Consequatur, odit? Facilis a placeat, laboriosam, dolorum blanditiis, voluptate totam error nesciunt pariatur quaerat voluptatem quas id ipsam atque! Aliquid facilis culpa et atque mollitia eum enim. Ut iusto eius temporibus id voluptates ullam tempora? Voluptatibus, corrupti eveniet! Voluptas sit eaque ipsa nobis tenetur aut laudantium nam hic, cum cupiditate beatae ut, minima nulla voluptates amet fugit animi harum quibusdam laboriosam. Amet, in possimus! Doloremque quod hic officia non in asperiores nihil, maxime aut.
+        </p>
+    </aside>
+
+</div>
+    <footer>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus incidunt laborum iste accusamus non? Eveniet cumque fugiat tenetur, ducimus assumenda recusandae culpa vero laudantium maiores. Temporibus, aperiam rerum quisquam commodi placeat voluptatibus nisi cumque, quas animi possimus neque consequatur in fuga laborum est suscipit, magni debitis aut exercitationem totam. Ab vel exercitationem aspernatur repellendus. Debitis sunt molestiae, mollitia explicabo magni odio voluptatibus beatae eos ipsum eligendi nemo numquam porro commodi voluptas aliquid voluptate earum consequuntur! Corporis minima magni ab harum ea quasi enim minus, esse eum nemo deleniti voluptate iusto est dignissimos voluptatem perferendis molestiae nam saepe repellat excepturi. Amet?
+        </p>
+    </footer>
+    
+
+</body>
+</html>
